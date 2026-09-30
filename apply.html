@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admissions Form - Velo International School</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    :root {
+      --primary-dark: #0f2744;
+      --primary-medium: #1e3a5f;
+      --accent-gold: #f4c542;
+      --accent-light: #87ceeb;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #f8fafc;
+    }
+
+    .font-heading { font-family: 'Playfair Display', Georgia, serif; }
+    .font-body { font-family: 'Source Sans 3', 'Segoe UI', sans-serif; }
+
+    /* Form specific styles matching the theme */
+    .form-input {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid #e2e8f0;
+      border-radius: 0.5rem;
+      outline: none;
+      transition: all 0.3s ease;
+      color: var(--primary-dark);
+      background-color: #f8fafc;
+    }
+
+    .form-input:focus {
+      border-color: var(--accent-gold);
+      box-shadow: 0 0 0 3px rgba(244, 197, 66, 0.2);
+      background-color: #ffffff;
+    }
+
+    .form-label {
+      display: block;
+      font-weight: 600;
+      color: var(--primary-medium);
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    .btn-submit {
+      background: linear-gradient(135deg, var(--accent-gold) 0%, #e6b52e 100%);
+      color: var(--primary-dark);
+      font-weight: 700;
+      padding: 0.875rem 2rem;
+      border-radius: 9999px;
+      transition: all 0.3s ease;
+      width: 100%;
+      border: none;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+	  
+    }
+
+    .btn-submit:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(244, 197, 66, 0.4);
+    }
+
+    /* Section divider style */
+    .section-divider {
+      border-left: 4px solid var(--accent-gold);
+      padding-left: 1rem;
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+
+<body class="font-body min-h-screen flex items-center justify-center p-4">
+
+  <div class="max-w-3xl w-full bg-white rounded-2xl shadow-xl overflow-hidden my-8">
+    
+    <div class="bg-[#0f2744] p-8 text-center text-white relative overflow-hidden">
+      <div class="relative z-10">
+        <h1 class="font-heading text-3xl md:text-4xl font-bold mb-2">Admission Application</h1>
+        <div class="w-16 h-1 bg-[#f4c542] mx-auto rounded-full mb-4"></div>
+        <p class="text-gray-300">Join the Velo International School Community</p>
+      </div>
+      <div class="absolute top-0 right-0 w-32 h-32 bg-[#f4c542] rounded-full mix-blend-multiply filter blur-3xl opacity-20 transform translate-x-10 -translate-y-10"></div>
+      <div class="absolute bottom-0 left-0 w-32 h-32 bg-[#87ceeb] rounded-full mix-blend-multiply filter blur-3xl opacity-20 transform -translate-x-10 translate-y-10"></div>
+    </div>
+
+    <div class="p-8 md:p-10">
+      <form action="https://formsubmit.co/ahirmihir029@gmail.com" method="POST" class="space-y-8">
+        
+        <input type="text" name="_honey" style="display:none">
+        
+        <input type="hidden" name="_captcha" value="false">
+
+        <div>
+          <div class="section-divider">
+            <h2 class="font-heading text-xl font-bold text-[#0f2744]">Student Information</h2>
+          </div>
+          
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="col-span-2 md:col-span-1">
+              <label for="firstName" class="form-label">First Name *</label>
+              <input type="text" id="firstName" name="Student First Name" required class="form-input" placeholder="Enter first name">
+            </div>
+            
+            <div class="col-span-2 md:col-span-1">
+              <label for="lastName" class="form-label">Last Name *</label>
+              <input type="text" id="lastName" name="Student Last Name" required class="form-input" placeholder="Enter last name">
+            </div>
+
+            <div class="col-span-2 md:col-span-1">
+              <label for="dob" class="form-label">Date of Birth *</label>
+              <input type="date" id="dob" name="Date of Birth" required class="form-input">
+            </div>
+
+            <div class="col-span-2 md:col-span-1">
+              <label for="grade" class="form-label">Grade Applying For *</label>
+              <select id="grade" name="Grade Applied For" required class="form-input cursor-pointer">
+                <option value="" disabled selected>Select a grade</option>
+                <option value="Kindergarten">Kindergarten</option>
+                <option value="Grade 1">class 1</option>
+                <option value="Grade 2">class 2</option>
+                <option value="Grade 3">class 3</option>
+                <option value="Grade 4">class 4</option>
+                <option value="Grade 5">class 5</option>
+                <option value="Grade 6">class 6</option>
+                <option value="Grade 7">class 7</option>
+                <option value="Grade 8">class 8</option>
+                <option value="Grade 9">class 9</option>
+                <option value="Grade 10">class 10</option>
+                <option value="Grade 11">class 11</option>
+                <option value="Grade 12">class 12</option>
+              </select>
+            </div>
+            
+             <div class="col-span-2">
+              <label class="form-label">Gender</label>
+              <div class="flex gap-6 mt-2">
+                <label class="flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="Gender" value="Male" class="w-4 h-4 text-[#f4c542] focus:ring-[#f4c542]">
+                  <span class="text-gray-700">Male</span>
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="Gender" value="Female" class="w-4 h-4 text-[#f4c542] focus:ring-[#f4c542]">
+                  <span class="text-gray-700">Female</span>
+                </label>
+                 <label class="flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="Gender" value="Other" class="w-4 h-4 text-[#f4c542] focus:ring-[#f4c542]">
+                  <span class="text-gray-700">Other</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="section-divider">
+            <h2 class="font-heading text-xl font-bold text-[#0f2744]">Parent / Guardian Information</h2>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="col-span-2 md:col-span-1">
+              <label for="parentName" class="form-label">Full Name *</label>
+              <input type="text" id="parentName" name="Parent Name" required class="form-input" placeholder="Parent/Guardian full name">
+            </div>
+
+            <div class="col-span-2 md:col-span-1">
+              <label for="relationship" class="form-label">Relationship to Student *</label>
+              <input type="text" id="relationship" name="Relationship" required class="form-input" placeholder="e.g. Father, Mother, Guardian">
+            </div>
+
+            <div class="col-span-2 md:col-span-1">
+              <label for="email" class="form-label">Email Address *</label>
+              <input type="email" id="email" name="Parent Email" required class="form-input" placeholder="example@email.com">
+            </div>
+
+            <div class="col-span-2 md:col-span-1">
+              <label for="phone" class="form-label">Phone Number *</label>
+              <input type="tel" id="phone" name="Phone Number" required class="form-input" placeholder="+1 234 567 890">
+            </div>
+
+            <div class="col-span-2">
+              <label for="address" class="form-label">Home Address</label>
+              <textarea id="address" name="Address" rows="2" class="form-input" placeholder="Street address, City, State, Zip Code"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div>
+           <div class="section-divider">
+            <h2 class="font-heading text-xl font-bold text-[#0f2744]">Academic History</h2>
+          </div>
+           <div class="grid grid-cols-1 gap-6">
+              <div>
+                <label for="lastSchool" class="form-label">Previous School Attended</label>
+                <input type="text" id="lastSchool" name="Last School" class="form-input" placeholder="Name of previous school">
+              </div>
+              <div>
+                 <label for="comments" class="form-label">Additional Comments / Special Needs</label>
+                 <textarea id="comments" name="Comments" rows="3" class="form-input" placeholder="Please list any allergies, medical conditions, or specific learning requirements..."></textarea>
+              </div>
+           </div>
+        </div>
+
+        <div class="pt-4">
+          <button type="submit" class="btn-submit">Submit Application</button>
+          <p class="text-center text-xs text-gray-500 mt-4">
+            By clicking Submit, you agree to our <a href="#" class="text-[#1e3a5f] hover:underline">Terms</a> and <a href="#" class="text-[#1e3a5f] hover:underline">Privacy Policy</a>.
+          </p>
+        </div>
+
+      </form>
+
+    </div>
+	
+  </div>
+
+</body>
+</html>
